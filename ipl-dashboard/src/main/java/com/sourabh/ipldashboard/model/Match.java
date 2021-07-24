@@ -24,6 +24,9 @@ public class Match {
     private String umpire1;
     private String umpire2;
 
+    public Match() {
+    }
+
     public long getId() {
         return id;
     }
