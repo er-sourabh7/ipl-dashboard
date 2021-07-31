@@ -28,11 +28,11 @@ public class MatchDataProcessor implements ItemProcessor<MatchInput, Match> {
     if ("bat".equalsIgnoreCase(matchInput.getToss_decision())) {
       firstInningsTeam = matchInput.getToss_winner();
       secondInningsTeam = matchInput.getToss_winner().equals(matchInput.getTeam1()) ? matchInput.getTeam2()
-          : matchInput.getTeam2();
+          : matchInput.getTeam1();
     } else {
       firstInningsTeam = matchInput.getToss_winner();
       secondInningsTeam = matchInput.getToss_winner().equals(matchInput.getTeam1()) ? matchInput.getTeam2()
-          : matchInput.getTeam2();
+          : matchInput.getTeam1();
     }
     match.setTeam1(firstInningsTeam);
     match.setTeam2(secondInningsTeam);

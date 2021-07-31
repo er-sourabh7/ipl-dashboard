@@ -31,3 +31,10 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Yarn ###
+*.lock
+
+### React App ###
+src/frontend/node_modules/
+src\frontend\node_modules\
